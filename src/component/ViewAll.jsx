@@ -6,7 +6,7 @@ import axios from 'axios'
 const ViewAll = () => {
     const [data, setChange] = useState([])
     const fetchData = () => {
-        axios.get("https://anishpdm.github.io/dummy-api-new/student.json").then(
+        axios.get("https://courseapplogix.onrender.com/getdata").then(
             (response) => {
                 console.log(response.data)
                 setChange(response.data)
